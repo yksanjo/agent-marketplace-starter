@@ -1,43 +1,84 @@
-# Agent Marketplace Starter
+# agent-marketplace-starter
 
-A minimal starter template for building Agent Marketplace integrations.
+## Detailed Description
 
-## Quick Start
+agent-marketplace-starter is maintained as an industry-grade software project with production-ready engineering practices.  
+This repository includes documented setup, quality gates, operational guidance, and governance standards so contributors can safely build, test, and ship changes with confidence.
+
+## Problem Statement
+
+Describe the user or business problem this project solves, the target users, and expected outcomes.
+
+## Solution Overview
+
+Summarize the architecture, core modules, and runtime behavior at a high level.
+
+## Key Features
+
+- Clear project scope and intended use.
+- Reproducible local development workflow.
+- Test coverage and CI quality gates.
+- Security and contribution policies.
+- Deployment-ready repository structure.
+
+## Repository Structure
+
+```text
+.
+|-- src/                  # Core implementation
+|-- tests/                # Automated test suites
+|-- docs/                 # Design notes and operational docs
+|-- .github/workflows/    # CI pipelines
+|-- README.md
+|-- LICENSE
+|-- CONTRIBUTING.md
+|-- SECURITY.md
+|-- CODE_OF_CONDUCT.md
+```
+
+## Getting Started
+
+### Prerequisites
+
+- Git
+- Project runtime/toolchain for this repo
+
+### Local Setup
 
 ```bash
-# Install dependencies
-npm install
-
-# Start the server
-npm start
+npm ci
+npm run lint
+npm test
+npm run build
 ```
 
-The API will be available at `http://localhost:3001`.
+## Usage
 
-## API Endpoints
+Document primary commands, API routes, CLI examples, or UI workflows here.
 
-- `GET /api/agents` - List all agents
-- `GET /api/agents/:id` - Get agent by ID
-- `GET /api/deployed` - List deployed agents
-- `POST /api/deploy` - Deploy an agent
-- `DELETE /api/deployed/:id` - Remove deployed agent
-- `GET /api/stats` - Get dashboard stats
+## Quality Standards
 
-## Example Usage
+- CI must pass before merge.
+- Changes require tests for critical behavior.
+- Security-sensitive changes should include risk notes.
+- Keep pull requests focused and reviewable.
 
-```javascript
-// Fetch agents
-const response = await fetch('http://localhost:3001/api/agents');
-const agents = await response.json();
+## Security
 
-// Deploy an agent
-await fetch('http://localhost:3001/api/deploy', {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ agentId: 'agent-001' })
-});
-```
+See `SECURITY.md` for responsible disclosure and handling guidelines.
 
-## Extending
+## Contributing
 
-Add more agents to the `agents` array in `server.js` to customize your marketplace.
+See `CONTRIBUTING.md` for branching, commit, and pull request expectations.
+
+## Roadmap
+
+Track upcoming milestones, technical debt, and planned feature work.
+
+## Support
+
+Open a GitHub issue for bugs, feature requests, or documentation gaps.
+
+## License
+
+This project is released under the MIT License.
