@@ -1,5 +1,12 @@
 # agent-marketplace-starter
 
+Production-grade project scaffold focused on reliability, maintainability, and fast onboarding.
+
+[![CI](https://img.shields.io/github/actions/workflow/status/yksanjo/agent-marketplace-starter/ci.yml?branch=main&label=ci)](https://github.com/yksanjo/agent-marketplace-starter/actions)
+![License](https://img.shields.io/github/license/yksanjo/agent-marketplace-starter)
+![Last Commit](https://img.shields.io/github/last-commit/yksanjo/agent-marketplace-starter)
+![Repo Size](https://img.shields.io/github/repo-size/yksanjo/agent-marketplace-starter)
+
 ## Detailed Description
 
 agent-marketplace-starter is maintained as an industry-grade software project with production-ready engineering practices.  
